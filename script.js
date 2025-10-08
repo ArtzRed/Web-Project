@@ -91,7 +91,7 @@
         d.addEventListener('click', ()=>openModal(i));
         grid.appendChild(d);
       });
-      countEl.textContent = `${ejercicios.length} ejercicio(s)`;
+      countEl.textContent = `${ejercicios.length} Exercises in total`;
       if(ejercicios.length===0){ grid.innerHTML = '<div style="color:var(--muted)">No hay ejercicios. Usa el formulario a la derecha para agregar uno.</div>' }
     }
 

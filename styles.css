@@ -25,6 +25,7 @@ body{
     background:linear-gradient(180deg,#071233 0%, #071026 100%);
     color:#e6eef8;
     padding:28px
+    
 }
 
 /* ----------------------------------- */
@@ -43,12 +44,13 @@ header{
     display:flex;
     gap:16px;
     align-items:center;
-    justify-content:space-between;
-    margin-bottom:18px
+    justify-content:center;
+    margin-bottom:2rem;
 }
 header h1{
     margin:0;
-    font-size:20px
+    font-size:50px
+    
 }
 header p{
     margin:0;
@@ -70,12 +72,15 @@ header p{
 /* 5. Componentes (Grid de Cards) */
 /* ----------------------------------- */
 /* grid de cards */
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(100px,1fr));
-    gap:var(--gap)
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+  gap: 1rem; /* Espacio entre los cuadrados */
+  justify-content: center;
+  margin: 2rem auto;
+  width: max-content;
+  
 }
-
 .card{
     background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
     padding:12px;
@@ -84,7 +89,8 @@ header p{
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    min-height:90px;
+    min-height:15.6vh;
+    min-width:15.6vh;
     cursor:pointer;
     transition:transform .12s ease, box-shadow .12s ease
 }
